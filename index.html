@@ -1,87 +1,102 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Aguillar Family Wine Festival</title>
-    <link rel="stylesheet" type="text/css" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Oswald"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <a href="#blog">Blog</a>
+      </ul>
+      <ul>
+        <a href="#media">Media</a>
+      </ul>
+      <ul>
+        <a href="#about">About</a>
+      </ul>
+    </nav>
+
     <header>
-      <h1>Annual Aguillar Family Wine Festival</h1>
+      <h1>New York City</h1>
     </header>
 
-    <div class="container">
-      <table>
-        <thead>
-          <tr>
-            <th colspan="2">
-              <h1>Wine Festival Schedule</h1>
-            </th>
-          </tr>
-          <tr>
-            <th>
-              <h2>Time</h2>
-            </th>
-            <th>
-              <h2>Event</h2>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="left">
-              <h3>12:00 PM</h3>
-            </td>
-            <td>
-              <h3>Welcome Reception</h3>
-            </td>
-          </tr>
-          <tr>
-            <td class="left">
-              <h3>01:00 PM</h3>
-            </td>
-            <td>
-              <h3>Storytelling & Tasting</h3>
-            </td>
-          </tr>
-          <tr>
-            <td class="left">
-              <h3>02:00 PM</h3>
-            </td>
-            <td>
-              <h3>Wine Luncheon</h3>
-            </td>
-          </tr>
-          <tr>
-            <td class="left">
-              <h3>03:00 PM</h3>
-            </td>
-            <td>
-              <h3>Aguillar Family Wines</h3>
-            </td>
-          </tr>
-          <tr>
-            <td class="left">
-              <h3>04:00 PM</h3>
-            </td>
-            <td>
-              <h3>Wine & Cheese Tasting</h3>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <main>
+      <section id="blog">
+        <article>
+          <p>
+            New York City is made up of five boroughs which include Queens,
+            Manhattan, Brooklyn, the Bronx, and Staten Island. The city is the
+            home of approximately 8 million people. In 1876, France gifted the
+            City of New York what is known as the Statue of Liberty, which is
+            currently located on Ellis Island commonly visited by tourists.
+            However, it took 10 years to assemble and therefore wasn’t unveiled
+            until 1886. Another tourist destination is Times Square. Times
+            Square is commonly known for the big buildings, Broadway shows, and
+            bright neon signs. This famous location was named after The New York
+            Times after the Times moved to that location. Prior to that, it was
+            named Longacre Square. New York City is also known for its bridges
+            that connect the boroughs and allow ease of transportation.
+          </p>
+        </article>
+      </section>
 
-    <footer>
-      <h3>Contact</h3>
-      <h3>Location</h3>
-      <h3>Privacy Policy</h3>
+      <figure>
+        <img
+          src="https://content.codecademy.com/courses/Semantic%20HTML/statue-of-liberty.jpeg"
+          alt=""
+        />
+        <figcaption>
+          This is the Statue of Liberty, a popular tourist attraction located on
+          Ellis Island.
+        </figcaption>
+      </figure>
+
+      <aside>
+        <p>
+          New York City is very popular for the variety of great food it has.
+          Some of the top food items in NYC include:
+        </p>
+        <ol>
+          <li>Pizza</li>
+          <li>Bagels</li>
+          <li>Burgers and Sandwiches</li>
+          <li>Ramen</li>
+          <li>Tacos</li>
+          <li>Pasta</li>
+          <li>Desserts</li>
+        </ol>
+      </aside>
+
+      <section>
+        <article>
+          <h2>The Scenery in NYC</h2>
+
+          <p>
+            While the view in the city is beautiful, the sounds are not as
+            lovely. Below you'll see an example of the view and the sounds
+            you'll deal with in NYC on a daily basis.
+          </p>
+        </article>
+
+        <video
+          src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-skyline-timelapse.mp4"
+          controls
+        ></video>
+        <embed
+          src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-skyline.jpeg"
+          type=""
+        />
+        <audio
+          src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov"
+          controls
+        ></audio>
+      </section>
+    </main>
+
+    <footer id="about">
+      <p>Posted by: Terry</p>
+      <p>Contact information: Blogger@NYC.com</p>
     </footer>
   </body>
 </html>
