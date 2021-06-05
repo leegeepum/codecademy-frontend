@@ -1,115 +1,84 @@
 body {
-  background: #e6e6e6;
-}
-
-nav ul {
-  list-style-type: none;
+  /* Old browsers */
+  background: #141e30;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(-45deg, #35577d, #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(-45deg, #35577d, #141e30);
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #010e80;
-  display: table;
+}
+
+h1 {
+  color: #fff !important;
+  font-size: 2em;
+  padding-top: 100px;
   width: 100%;
-}
-
-nav li {
-  display: table-cell;
-}
-
-li a {
-  display: block;
-  color: white;
+  font-family: Georgia;
   text-align: center;
-  padding: 30px 30px;
-  text-decoration: none;
 }
 
-li a:hover {
-  background-color: #111;
-}
-
-h2 a {
-  padding: 33px 25px;
-  color: white;
-  text-decoration: none;
-}
-
-h2 a:hover {
-  background-color: #111;
-}
-
-figcaption {
+h2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 24px;
+  padding-bottom: 30px;
   text-align: left;
+  width: 70%;
+  font-family: Georgia;
 }
 
-header {
-  margin-left: 14px;
-}
-
-article {
+p {
+  color: aliceblue;
+  line-height: 1.3em;
   text-align: left;
-  margin: 15px;
-  max-width: 80%;
-  font-size: 18px;
-  line-height: 32px;
-}
-
-img {
-  width: 400px;
-  height: 300px;
-  position: relative;
-  right: 28px;
-}
-
-aside {
-  left: 10px;
-  border: 1px solid black;
-  padding: 15px;
-  max-width: 80%;
-  position: relative;
-  border-color: #010e80;
-  border-width: 5px;
-  font-size: 18px;
-}
-
-footer {
-  position: relative;
   width: 100%;
-  bottom: -100px;
-  background-color: #010e80;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-footer p {
-  color: white;
-  text-decoration: none;
+.byline {
+  font-family: Helvetica;
+  color: rgba(255, 255, 255, 0.5);
+  float: left;
+  font-size: 14px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.caption {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 14px;
+  margin-left: 20px;
   padding: 10px;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
+  position: relative;
+  top: 80%;
+  width: 60%;
+  background-color: white;
+  color: black;
 }
 
-footer a {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
+.content {
+  padding: 40px;
 }
 
-video {
-  display: block;
-  width: 420px;
-  height: 250px;
-  padding: 15px;
+.image {
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-2/soccer.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
 }
 
-audio {
-  padding: 15px;
-  width: 98%;
-  box-sizing: border-box;
-}
-
-embed {
-  width: 400px;
-  height: 458px;
-  padding: 15px;
+.writer-img {
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+  float: left;
+  width: 50px;
 }
