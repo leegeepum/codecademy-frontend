@@ -1,23 +1,32 @@
-.block {
-  width: 100px;
-  height: 100px;
-  /* display: block; */
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#container {
-  background-color: #f4e8c1;
-  position: absolute;
-  width: 100%;
+table {
+  width: 650px;
+  margin: 0 auto;
+  border: 2px solid #9932cc;
 }
 
-#teal {
-  background-color: #a8d0db;
-  padding: 0 50px;
-  margin: 100px;
+th {
+  font-weight: 900;
+  font-size: large;
+  background-color: #dda0dd;
 }
 
-#purple {
-  background-color: #414073;
-  margin: 50px 100px;
-  padding: 50px;
+tbody td {
+  border-bottom: 1px solid #9932cc;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2 {
+  color: #74269b;
+}
+
+span {
+  background-color: #f5f5dc;
 }
