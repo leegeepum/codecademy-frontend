@@ -34,17 +34,17 @@
             <li>
               <a href="#">
                 <img
-                  src="https://content.codecademy.com/programs/ui-design/color-ui/logo.svg"
-                  alt="Citrus"
+                  src="https://content.codecademy.com/programs/ui-design/pinpoint/logo.svg"
+                  alt="Pinpoint"
                   class="logo"
                 />
               </a>
             </li>
             <li>
-              <a href="#" class="site-nav-link">About</a>
+              <a href="#" class="site-nav-link">Categories</a>
             </li>
             <li>
-              <a href="#" class="site-nav-link-active">Contact Us</a>
+              <a href="#" class="site-nav-link active">Your Cart</a>
             </li>
           </ul>
           <ul class="site-nav-right">
@@ -56,7 +56,7 @@
                 role="button"
               >
                 <img
-                  src="https://content.codecademy.com/programs/ui-design/color-ui/icon-search.svg"
+                  src="https://content.codecademy.com/programs/ui-design/pinpoint/icon-search.svg"
                   alt="Search"
                 />
               </a>
@@ -69,6 +69,15 @@
               >
             </li>
           </ul>
+          <ul class="site-nav-mobile">
+            <li>
+              <a
+                href="#"
+                class="button button-secondary button-small site-nav-link"
+                >Menu</a
+              >
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -76,11 +85,8 @@
     <main role="main" class="site-main">
       <header aria-labelledby="page-title" class="clearfix site-main-header">
         <div class="container">
-          <h1 id="page-title">Contact Our Team</h1>
-          <p class="col-1-2">
-            We are standing by for your questions, comments or concerns. If
-            there is anything we can do, please reach out and let us know.
-          </p>
+          <h1 id="page-title">Checkout Details</h1>
+          <p>Please enter your information below. All fields are required.</p>
         </div>
       </header>
       <section
@@ -91,55 +97,230 @@
         <div class="container">
           <div class="card contact-form-container">
             <div class="clearfix">
-              <div class="col-1-2">
+              <div class="col-left col-1-2">
                 <figure class="alert alert-error">
                   <div class="alert-content">
                     <img
-                      src="https://content.codecademy.com/programs/ui-design/color-ui/icon-help.svg"
+                      src="https://content.codecademy.com/programs/ui-design/pinpoint/icon-help.svg"
                       alt="Help indicator"
                     />
-                    <p>Looks like you forgot to add your name!</p>
+                    <p>Looks like your forgot to add your Payment Method!</p>
                   </div>
                 </figure>
-                <h2 class="section-header">Leave A Message</h2>
+                <h2 class="section-header">1. Billing Details</h2>
                 <form role="form" class="clearfix">
-                  <label>Your Name</label>
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    class="input-error"
-                  />
-                  <label>Your Email</label>
-                  <input type="email" placeholder="Email Address" />
-                  <label>Select Contact Reason</label>
-                  <select>
-                    <option selected disabled>Please Select One</option>
-                    <option>Customer Service Question</option>
-                    <option>Billing Question</option>
-                    <option>Website Question</option>
-                  </select>
-                  <label>Issue Details</label>
-                  <textarea
-                    placeholder="Provide as much detail as you can so we can address your issue."
-                  ></textarea>
+                  <fieldset>
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      class="col-1-2"
+                      id="name"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      class="col-1-2"
+                      id="name"
+                    />
+                  </fieldset>
+                  <div>
+                    <label class="col-1-2" for="email">Your Email</label>
+                    <input type="email" class="col-1-2" id="email" />
+                    <label for="number">Phone Number</label>
+                    <input type="tel" class="col-1-2" id="number" />
+                  </div>
+                  <div>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" />
+                  </div>
+                  <div>
+                    <div class="col-1-2">
+                      <label for="city">City</label>
+                      <input type="text" id="city" />
+                    </div>
+                    <div class="col-1-4">
+                      <label for="state">State</label>
+                      <input type="tel" id="state" />
+                    </div>
+                    <div class="col-1-4">
+                      <label for="zip">Zip Code</label>
+                      <input type="text" id="zip" />
+                    </div>
+                  </div>
+                </form>
+                <hr class="divider" />
+                <h2 class="section-header">2. Shipping Details</h2>
+                <form role="form" class="clearfix">
+                  <fieldset>
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      class="col-1-2"
+                      id="name"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      class="col-1-2"
+                      id="name"
+                    />
+                  </fieldset>
+                  <div>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" />
+                  </div>
+                  <div>
+                    <div class="col-1-2">
+                      <label for="city">City</label>
+                      <input type="text" id="city" />
+                    </div>
+                    <div class="col-1-4">
+                      <label for="state">State</label>
+                      <input type="tel" id="state" />
+                    </div>
+                    <div class="col-1-4">
+                      <label for="zip">Zip Code</label>
+                      <input type="text" id="zip" />
+                    </div>
+                  </div>
+                </form>
+                <hr class="divider" />
+                <form role="form" class="clearfix">
+                  <fieldset>
+                    <div class="radio-item col-1-2">
+                      <input
+                        type="radio"
+                        id="shippingChoice1"
+                        name="contact"
+                        value="email"
+                      />
+                      <label for="shippingChoice1">Expedited</label>
+                      <small
+                        >Disptached immediately.<br />
+                        (1-2 Business Days)</small
+                      >
+                    </div>
+                    <div class="radio-item col-1-2">
+                      <input
+                        type="radio"
+                        id="shippingChoice2"
+                        name="contact"
+                        value="email"
+                      />
+                      <label for="shippingChoice2">Standard Free</label>
+                      <small
+                        >In stock dispatched within 24 hours. <br />(5-7
+                        Business Days)</small
+                      >
+                    </div>
+                  </fieldset>
+                  <hr class="divider" />
+                </form>
+                <h2 class="section-header">3. Payment Method</h2>
+                <form role="form" class="clearfix">
+                  <fieldset>
+                    <div class="col-1-2">
+                      <label for="creditcard">Credit Card Number</label>
+                      <input type="text" id="creditcard" class="input-error" />
+                    </div>
+                    <div class="col-1-4">
+                      <label for="expiration">Exp. Date</label>
+                      <input type="month" id="expiration" class="input-error" />
+                    </div>
+                    <div class="col-1-4">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" class="input-error" />
+                    </div>
+                  </fieldset>
+                  <hr class="divider" />
+                  <div>
+                    <label for="notes">Order Notes</label>
+                    <textarea
+                      placeholder="Notes about your order, e.g. special notes for delivery"
+                      id="notes"
+                    ></textarea>
+                  </div>
                   <input
                     type="submit"
-                    value="Submit Message"
+                    value="Order"
                     class="button button-primary float-right"
                   />
                 </form>
               </div>
               <div class="col-1-2">
-                <p><b>Our Location</b></p>
-                <img
-                  src="https://content.codecademy.com/programs/ui-design/color-ui/map.jpg"
-                  alt="Office Location"
-                />
-                <ul class="location-details">
-                  <li><b>Address:</b> 233 S Wacker Dr, Chicago, IL 60606</li>
-                  <li><b>Phone:</b> (123) 456-7890</li>
-                  <li><b>Email:</b> support@citrusmail.com</li>
+                <h2 class="section-header">Order Summary</h2>
+                <hr class="divider" />
+                <ul class="order-details">
+                  <li class="order-item clearfix">
+                    <div class="col-1-4">
+                      <img
+                        src="https://content.codecademy.com/programs/ui-design/pinpoint/clothing-tshirt.png"
+                        alt="tshirt"
+                      />
+                    </div>
+                    <!-- <div class=""> -->
+                    <ul class="col-1-4">
+                      <li><b>White T-Shirt</b></li>
+                      <li>Hanes Brand</li>
+                      <li>size: <b>M</b></li>
+                    </ul>
+                    <div class="col-1-4">
+                      <input type="number" value="1" />
+                    </div>
+                    <div class="col-1-4 item-price">
+                      <p>$14.99</p>
+                    </div>
+                    <!-- </div> -->
+                  </li>
+                  <li class="order-item clearfix">
+                    <div class="col-1-4">
+                      <img
+                        src="https://content.codecademy.com/programs/ui-design/pinpoint/clothing-leggings.png"
+                        alt="tshirt"
+                      />
+                    </div>
+                    <!-- <div class=""> -->
+                    <ul class="col-1-4">
+                      <li><b>Women's Leggings</b></li>
+                      <li>Hanes Brand</li>
+                      <li>size: <b>M</b></li>
+                    </ul>
+                    <div class="item-amount col-1-4">
+                      <input type="number" value="1" />
+                    </div>
+                    <div class="col-1-4 item-price">
+                      <p>$19.99</p>
+                    </div>
+                    <!-- </div> -->
+                  </li>
                 </ul>
+                <hr class="divider" />
+                <ul class="order-charge clearfix">
+                  <li>
+                    <p class="order-charge-item col-1-2">
+                      <b>Subtotal(2 items)</b>
+                    </p>
+                    <p class="order-charge-item item-price col-1-2">$34.98</p>
+                  </li>
+                  <li>
+                    <p class="order-charge-item col-1-2"><b>Tax</b></p>
+                    <p class="order-charge-item item-price col-1-2">$2.49</p>
+                  </li>
+                  <li>
+                    <p class="order-charge-item col-1-2"><b>Shipping</b></p>
+                    <p class="order-charge-item item-price col-1-2">$5.00</p>
+                  </li>
+                  <li class="total-price">
+                    <h3 class="order-charge-item col-1-2">Order Total</h3>
+                    <h3 class="order-charge-item item-price col-1-2">$42.47</h3>
+                  </li>
+                </ul>
+                <div class="clearfix help-box">
+                  <p>Questions? or Need help to complete your order?</p>
+                  <p>Call: <a href="tel:1-800-123-1234">1-800-123-1234</a></p>
+                </div>
               </div>
             </div>
           </div>
@@ -154,7 +335,7 @@
           <ul class="col-1-4 footer-section">
             <li>
               <img
-                src="https://content.codecademy.com/programs/ui-design/color-ui/logo.svg"
+                src="https://content.codecademy.com/programs/ui-design/pinpoint/logo.svg"
                 alt="Citrus"
                 class="logo"
               />
@@ -195,16 +376,16 @@
           </div>
           <div class="col-1-4 footer-section" arai-labelledby="social-links">
             <p id="support-pages"><b>Stay Up To Date</b></p>
-            <form>
+            <form role="form">
               <input
                 type="email"
-                placeholder="Your emaill address"
+                placeholder="Your email address"
                 class="footer-email-input"
               />
               <input
                 type="submit"
                 value="Submit"
-                class="button button-secondary footer-email-button"
+                class="button button-primary footer-email-button"
               />
             </form>
           </div>
